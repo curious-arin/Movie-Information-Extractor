@@ -46,8 +46,8 @@ This application uses **Groq API** with **LangChain's Pydantic Output Parser** t
 Clone the repository:
 
 ```bash
-git clone https://github.com/curious-arin/movie-information-extractor.git
-cd movie-information-extractor
+git clone https://github.com/curious-arin/Movie-Information-Extractor.git
+cd Movie-Information-Extractor
 ```
 
 Install dependencies:
@@ -65,7 +65,7 @@ streamlit run app.py
 ## ▶️ Usage
 
 1. Launch the application.
-2. Enter your **Mistral API Key**.
+2. Enter your **Groq API Key**.
 3. Paste a movie description.
 4. Click **Extract Information**.
 5. View the structured JSON output.
