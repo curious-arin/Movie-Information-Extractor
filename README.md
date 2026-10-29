@@ -1,93 +1,64 @@
-# 🎬 Movie Information Extractor
+# Movie Information Extractor 🎬
 
-A Streamlit application that uses **Groq API Key**, **LangChain**, and **Pydantic** to extract structured movie information from unstructured text.
+## 🙂 Overview
 
-## 🍿 Business Domain
+An AI-powered Streamlit application that extracts structured movie information from unstructured text using Groq API, LangChain, and Pydantic.
 
-Media & Entertainment 
+-----
 
-## 📌 Problem Statement
+## 💡 Problem Statement
 
-Movie details are often written as long paragraphs, making it difficult to extract key information like the title, genre, director, cast, rating, and summary manually.
+Manually extracting movie details from lengthy paragraphs is time-consuming. This project automates the process by converting text into structured, validated JSON.
 
-## 💡 Solution
-
-This application uses **Groq API** with **LangChain's Pydantic Output Parser** to automatically convert movie descriptions into structured JSON, making the data easy to read, validate, and integrate into other applications.
-
-## ✨ Features
-
-- 🤖 AI-powered movie information extraction
-- 📄 Converts unstructured text into structured JSON
-- ✅ Pydantic schema validation
-- 🔐 Secure Groq API authentication
-- 🎯 Simple Streamlit interface
-
-## 📊 Extracted Information
-
-- Movie Title
-- Release Year
-- Genre
-- Director
-- Cast
-- Rating
-- Summary
+-----
 
 ## 🛠️ Tech Stack
 
 - Python
 - Streamlit
 - LangChain
-- Groq 
+- Groq API
 - Pydantic
 - python-dotenv
 
-## 🚀 Installation
+-----
 
-Clone the repository:
+## 🔄 Workflow
 
-```bash
-git clone https://github.com/curious-arin/Movie-Information-Extractor.git
-cd Movie-Information-Extractor
-```
+1. Enter the Groq API key for authentication.
+2. Paste a movie description.
+3. Process the text using the Groq LLM and LangChain prompt.
+4. Validate the extracted information using Pydantic Output Parser.
+5. Display the structured JSON output.
 
-Install dependencies:
+-----
 
-```bash
-pip install -r requirements.txt
-```
+## 📊 Extracted Information
 
-Run the application:
+- Title and Release Year
+- Genre and Director
+- Cast and Rating
+- Summary
 
-```bash
-streamlit run app.py
-```
+-----
 
-## ▶️ Usage
+## 📂 Project Structure
 
-1. Launch the application.
-2. Enter your **Groq API Key**.
-3. Paste a movie description.
-4. Click **Extract Information**.
-5. View the structured JSON output.
-
-## 📁 Project Structure
-
-```
-movie-information-extractor/
-│── app.py              # Streamlit application
-│── raw.py              # CLI version
-│── requirements.txt    # Dependencies
-│── .gitignore
-│── LICENSE
+```text
+├── app.py
+├── raw.py
+├── requirements.txt
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
+-----
+
 ## 🔮 Future Improvements
 
-- Export extracted data as CSV, Excel, or JSON
-- Support information extraction for books, TV shows, and documentaries
-- Allow users to edit extracted information before exporting
-- Add support for multiple languages
-- Use React + Fastapi instead of streamlit 
-- Deploy the application for public access
-- Support additional LLM providers such as OpenAI and Google Gemini
+- Export data as CSV, Excel, or JSON.
+- Support books, TV shows, and documentaries.
+- Add multilingual support.
+- Build a React + FastAPI frontend.
+- Deploy the application and support additional LLM providers.
